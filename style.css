@@ -137,13 +137,13 @@ p{
     -webkit-filter: grayscale(100%);
 }
 #card1 {
-    background-image: url(imagens/video.png);
+    background-image: url(Imagens/video.png);
 }
 #card2 {
-    background-image: url(imagens/video2.png);  
+    background-image: url(Imagens/video2.png);  
 }
 #card3 {
-    background-image: url(imagens/video1.png);
+    background-image: url(Imagens/video1.png);
 
 }
 .marcas{
