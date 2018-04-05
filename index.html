@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagens/logo.png"/>
+    <script src="typed.js"></script>
+    <!-- External Scripts -->
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <!-- Internal Scripts -->
+    <title>Car workshop</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-light ">
+        <a class="navbar-brand ml-4" href="#">
+            <img src="imagens/logo.png" width="100" class="" href="#" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" title="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" title="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio" title="Portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" title="Services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#plans" title="Plans">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="carouselSlide">
+            <div class="carousel-item active" id="home">
+                <video poster="Imagens/video.png"  playsinline autoplay muted loop>
+                    <source src="video/gang.mp4" type="video/mp4">
+                    <source src="#" type="video/webm">
+                </video>
+                <div class="carousel-caption">
+                    <h1>WEBSITE MADE IN THE LANGUAGE
+                        <span id="typed"></span>
+                    </h1>
+                    <p class="lead mt-md-4">Today is my second site from scratch sure, all that is built for the bootstrap4 html5 css3 and javascript
+                        boot</p>
+                </div>
+                <!--div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="imagens/video1.png" alt="Second slide">
+                  <div class="carousel-caption">
+                    <h1>Segund Site Construction</h1>
+                    <p class="lead">Today is my second site from scratch sure, all that is built for the bootstrap4 html5 css3 and javascript boot</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="imagens/video2.png" alt="Third slide">
+                  <div class="carousel-caption">
+                    <h1>Segund Site Construction</h1>
+                    <p class="lead">Today is my second site from scratch sure, all that is built for the bootstrap4 html5 css3 and javascript boot</p>
+                  </div>
+                </div>
+              </div-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row descricao text-center" >
+            <div class="col-md-6" id="text">
+                <h2 class=" h1 text-center mb-5 text-light" >Workshop</h2>
+                <p class="ml-sm-3 text-md-left text-center text-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                    are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                    in the middle of text.There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                    slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                    anything embarrassing hidden in the middle of text.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="col-sm-12 img-fluid my-5" src="Imagens/logo-maior-branco.png" id="logomaior" href="#" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container text1" >
+        <div class="row text-center mt-5">
+            <h2 class="text-center  col-12 mt-5" id="portfolio">Photos of our customers</h2>
+            <p class="ml-sm-3 col-12 text-center">There are many variations of passages of Lorem Ipsum available.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="portfolio">
+        <div class="row" id="img-black">
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor mt-sm-4">
+            </div>
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor mt-sm-4">
+            </div>
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor mt-sm-4">
+            </div>
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor mt-sm-4">
+            </div>
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor mt-sm-4">
+            </div>
+            <div class="column col-md-4 col-sm-6">
+                <img src="imagens/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor mt-sm-4">
+            </div>
+        </div>
+    </div>
+
+    
+     <div class="container" id="services">
+        <h2 class="text-center col-12 my-5">Some doubts of our services</h2>
+        <div class="row text-center mt-5">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">Hidden in the middle of text?</h4>
+                <p class="mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    in some form, by injected humour, or randomised.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">In the middle text?</h4>
+                <p class="mb-4">There are many variations of passages of Lorem Ipsum of passages of Lorem Ipsum available, but the majority
+                    haveavailable</p>
+            </div>
+
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">Middle of text?</h4>
+                <p class="mb-4">There are many variations of passages of Lorem Ipsum available.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">The middle of text?</h4>
+                <p class="mb-4">Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                    words which don't look even slightly believable. </p>
+            </div>
+
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">hidden in the middle of text?</h4>
+                <p class="mb-4">Or randomised words which don't look even slightly believable. If you are going to use a re there isn't anything
+                    embarrassing hidden in the middle.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h4 class="text-dark">Hidden in the middle of text?</h4>
+                <p class="mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    in some form.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group text-center mt-5" id="plans">
+        <div class="card  col-12" id="card1">
+            <div class="card-body">
+                <h5 class=" display-4 card-title">Luxury I</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+
+        </div>
+        <div class="card  col-12" id="card2">
+            <div class="card-body">
+                <h5 class=" display-4 card-title">Luxury II</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+
+        </div>
+        <div class="card  col-12" id="card3">
+            <div class="card-body">
+                <h5 class=" display-4 card-title">Luxury III</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--Google Maps Start-->
+    <div class=" container-fluid col-12" id="margin-map">
+         <div id="map"></div>
+    </div>
+    <!--Google Maps End-->
+    
+    <!--Conact Start-->
+    
+<div class="container" id="contact">
+    <div class="form-row">
+        <div class="col-md-6 mt-5" id="contact-esquerdo">
+            <h2 class="col-12 text-center" >Contact Form</h2>
+            <div class=" form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+
+
+            <div class="custom-control custom-checkbox my-3 was-validated">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">Select this check box</label>
+                <div class="invalid-feedback">Click checkbox to continue</div>
+
+            </div>
+
+            <div id="button-form">
+                <button type="submit" class="btn btn-dark  col-3 my-3">Submit</button>
+            </div>
+        </div>
+        <div class="col-md-6 text-center my-5" id="contact-direito">
+            <p>Telephone: +55 (11) 9 8765-4321</p>
+            <p>E-mail: secondwebsite@hotmail.com</p>
+            <p>DEVELOPED BY: <STRONG class="kdev">KDEV</STRONG> Developer Front-End Jr</p>
+        </div>
+    </div>
+
+</div>
+    <!--Conact End-->
+    
+    <!--Card Clientes Logos--->
+    <div class="container-fluid marcas">
+        <div class="row text-center">
+          <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/BMW.png">
+          </div> 
+          
+          <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/Audi.png">
+          </div>
+          
+           <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/Nissan.png">
+          </div>
+          
+           <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/ferrari.png">
+          </div>
+          
+           <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/Lamborghini.png">
+          </div>
+          
+          <div class="col-2">
+           <img class="img-fluid marcas-logo" src="Imagens/logos/Lexus.png">
+          </div>
+        </div>
+    </div>
+    <!-----------------------------------------Footer--------------------------------->
+     <footer class="container-fluid footer">
+       <div class="col-md-12">
+        <div class="row text-center">
+                   
+                    <div class=" col-sm-4 text-center">
+                        <h3 class="text-light my-5">Company</h3>
+                        <p class="text-light text-left">Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedwords which don't look even slightly believable have suffered alteration in some form, by injected humour, or randomisedwords which don't look even slightly believable have suffered alteration in some form, by injected humour, or randomisedwords which don't look even slightly believable have suffered alteration in some form, by injected humour, or randomisedwords which don't look even slightly believable</p>
+
+                    </div>
+                    <div class=" col-sm-4 text-center">
+                        <h3 class="text-light my-5">Footer Menu</h3>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#plans">Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class=" col-sm-4 text-center">
+                        <h3 class="text-light my-5">Social networks</h3>
+                        <p class="text-light">Facebook</p>
+                        <p class="text-light">Instagram</p>
+                        <p class="text-light">Twitter</p>
+                        <p class="text-light">SnapChat</p>
+                        <p class="text-light">VigoVideo</p>
+
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <!----------------------------------------- Modal Start -------------------------------------------->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="imagens/1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="imagens/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="imagens/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="imagens/4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="imagens/5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="imagens/6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+     <!----------------------------------------- Modal  End -------------------------------------------->
+    <!-------------------------------------Scripts Typed.js Start---------------------------------------------------->
+    <script>
+        /* typed effect */
+        var typed = new Typed('#typed', {
+            strings: ['<strong> HTML 5</strong>', '<strong> CSS 3</strong>', '<strong> BOOTSTRAP 4</strong>', '<strong> JAVASCRIPT</strong>','<strong> TYPED.JS</strong>'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+    <!-------------------------------------Scripts Google Mpas---------------------------------------------------->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCozhYxx3-DxqCfpXa9MGTfksGVMJWevVo&callback=initMap">
+    </script>
+    <!-------------------------------------Scripts Typed.js End ---------------------------------------------------->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="javascript.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

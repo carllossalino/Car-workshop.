@@ -1,0 +1,376 @@
+.carousel-inner #carouselSlide{ margin-top: -70px !important; }
+
+nav{
+    /*height: 70px;*/
+    padding: 10px auto;
+    z-index:10; 
+}
+
+nav.black {
+    background:  #242424;
+    padding: 10px auto;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+#navbarNav{
+    padding-right: 50px;
+}
+#navbarNav.black {
+    background:  #242424;
+    padding: 10px 50px;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-weight: 600;
+    color: #d3d3d3 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    
+   color: #ffffff !important;
+}
+.navbar-light .navbar-brand{
+    color: #ffffff;
+}
+.carousel-caption{
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  right: 15%;
+  /*border: 1px solid;*/
+}
+video{
+    width: 100%;
+    -webkit-filter:brightness(.3);
+    filter:brightness(.3);
+}
+
+h1,p{
+    font-family: 'Mina', sans-serif;
+}
+p{
+    margin-bottom: none;
+}
+#typed{
+    color: orange;
+}
+
+.btn-success{
+    background-color: #ad5ed8 !important;
+    border-color: #ad5ed8 !important;
+    width: 200px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;   
+}
+.btn-success:hover {
+    background-color: #9e4ccb !important;
+    border-color: #9e4ccb !important;
+    width: 200px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+.h1{
+    font-family: 'Mina', sans-serif;
+}
+.descricao{   
+    /*border: 5px #cecece;*/
+    position: relative;
+    background: linear-gradient(to right, #49494a ,#262525);
+    /*background-color: #ad5ed8;*/
+    margin-top: -5%;
+   
+}
+.descricao:before {
+    content: '';
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: linear-gradient(to right, #49494a ,#262525);
+   /* background-color:#ad5ed8;*/
+    bottom: -157px;
+    left: 0;
+    top: auto;
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+#text{
+      padding-top: 10%;   
+    
+}
+#logomaior{
+    width: 500px;
+    height: auto;
+    padding-top: 15%;
+      
+}
+.text1{
+    padding-top: 13%;
+    z-index: 10;
+}
+#img-black{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    
+}
+.card{
+    border: transparent;
+    background-color: transparent;
+    color: #fff;
+}
+.card-body {
+    margin-top: 35%;
+}
+#card1, #card2, #card3{
+    margin: 0px;
+    border-radius: 0px;
+    height: 485px;
+    background-position: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#card1 {
+    background-image: url(imagens/video.png);
+}
+#card2 {
+    background-image: url(imagens/video2.png);  
+}
+#card3 {
+    background-image: url(imagens/video1.png);
+
+}
+.marcas{
+    background-color: #141414;
+    
+}
+.marcas-logo{
+    
+    padding: 25% 0%;
+    width: 100px;
+    height: auto;
+    margin-bottom: 0px;
+}
+#button-form{
+    text-align: center;
+}
+.kdev{
+    color: #ff6200;
+}
+@media (min-width: 768.98px) {
+#contact{
+    
+    height: 580px;
+        
+ }
+    #contact-esquerdo{
+        padding-top: 3%;
+    }
+    #contact-direito{
+        padding-top: 3%;
+        padding-top: 150px;
+    }
+}
+
+.footer{
+    background-color: #0a0a0a;
+}
+/***************************Modal******************************/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 65px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-y: hidden
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 75%;
+  max-width: 1200px;
+  border: none;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+    
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/*********************************Google Maps**************************************/
+#margin-map{
+    padding: 0px;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+}
+#map {
+        height: 400px;
+        width: 100%;
+        
+       }
+/******************************Media queries**************************************/
+
+@media (max-width: 740.98px) { 
+   .carousel-caption{
+      position: absolute;
+      top:20%;
+      left: 10%;
+      right: 10%;
+      font-size: 30px;
+      
+}
+    h1{
+        font-size: 30px;
+    }
+    .lead{
+        font-size: 15px;
+    }
+     .text1{
+        padding-top: 25%;
+    }
+
+
+}
+
+@media (max-width: 475.98px) { 
+   .carousel-caption{
+      position: absolute;
+      top:25%;
+      left: 10%;
+      right: 10%;
+      font-size: 30px;
+      
+}
+    h1{
+        font-size: 20px;
+    }
+    .lead{
+        font-size: 10px;
+    }
+  
+
+
+}
+@media (max-width: 389.98px) { 
+   .carousel-caption{
+      position: absolute;
+      top:30%;
+      left: 10%;
+      right: 10%;
+      font-size: 30px;
+      
+}
+    h1{
+        font-size: 10px;
+    }
+    .lead{
+        font-size: 5px;
+    }
+    .text1{
+        padding-top: 30%;
+    }
+
+
+}
